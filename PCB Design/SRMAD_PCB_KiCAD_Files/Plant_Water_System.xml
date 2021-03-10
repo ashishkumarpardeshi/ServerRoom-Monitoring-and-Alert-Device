@@ -1,0 +1,1509 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/ashish/Documents/Projects_Makerspace_Dec2020/Plant_Watering_Systemv(Non - IoT)/Plant_Water_System_PCB/Plant_Water_System.sch</source>
+    <date>Thu Dec 24 12:45:50 2020</date>
+    <tool>Eeschema 5.1.8-db9833491~88~ubuntu20.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title>IoT Plant Monitoring and Watering System</title>
+        <company>HBCSE - TIFR</company>
+        <rev>v0.1</rev>
+        <date/>
+        <source>Plant_Water_System.sch</source>
+        <comment number="1" value="Designer: Ashish Pardeshi"/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="Brd1">
+      <value>SSD1306</value>
+      <footprint>SSD1306:128x64OLED</footprint>
+      <libsource lib="SSD1306-128x64_OLED" part="SSD1306" description="SSD1306 OLED"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FCBCC4D</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>DS3231M</value>
+      <footprint>Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm</footprint>
+      <datasheet>http://datasheets.maximintegrated.com/en/ds/DS3231.pdf</datasheet>
+      <libsource lib="Timer_RTC" part="DS3231M" description="Extremely Accurate I2C-Integrated RTC/TCXO/Crystal SOIC-16"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FCF028F</tstamp>
+    </comp>
+    <comp ref="LS1">
+      <value>BUZ-PTH</value>
+      <footprint>Electromechanical:BUZZER-12MM</footprint>
+      <fields>
+        <field name="Field4">COMP-08253</field>
+      </fields>
+      <libsource lib="SparkFun-Electromechanical" part="BUZZER-PTH" description="Buzzer Small round buzzers that operate around the audible 2kHz range. You can use these as speakers to create simple music or user interfaces. Variant Overview:&lt;ul&gt;&lt;li&gt;&lt;b&gt;PTH - &lt;/b&gt; &lt;a href=&quot;https://www.sparkfun.com/products/7950&quot;&gt;Mini Speaker - PC Mount 12mm 2.048kHz&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;PTH_KIT - &lt;/b&gt; &lt;a href=&quot;https://www.sparkfun.com/products/7950&quot;&gt;Mini Speaker - PC Mount 12mm 2.048kHz&lt;/a&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt; KIT simplifies soldering by adding stop mask to one side of the pads.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;PTH_NO_SILK - &lt;/b&gt; &lt;a href=&quot;https://www.sparkfun.com/products/7950&quot;&gt;Mini Speaker - PC Mount 12mm 2.048kHz&lt;/a&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt; No silkscreen indicator of buzzer outline.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;PTH_KIT_NO_SILK - &lt;/b&gt; &lt;a href=&quot;https://www.sparkfun.com/products/7950&quot;&gt;Mini Speaker - PC Mount 12mm 2.048kHz&lt;/a&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt; KIT package w/o silkscreen&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;SMD - &lt;/b&gt; Buzzer Audio Magnetic (CCV-084B16)&lt;/li&gt; &lt;ul&gt;&lt;li&gt;SMD buzzer used on, e.g. the &lt;a href=&quot;https://www.sparkfun.com/products/8463&quot;&gt;LilyPad Buzzer&lt;/a&gt; and &lt;a href=&quot;https://www.sparkfun.com/products/9963&quot;&gt;RFID USB Reader&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;SMD_KIT - &lt;/b&gt; Buzzer Audio Magnetic (CCV-084B16)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;SMD Buzzer with elongated pins to make soldering easier. Used on the &lt;a href=&quot;https://www.sparkfun.com/products/10935&quot;&gt;SparkFun Simon Says - Surface Mount Soldering Kit&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FCF3E44</tstamp>
+    </comp>
+    <comp ref="Q1">
+      <value>MMBT2222A2</value>
+      <footprint>Silicon-Standard:SOT23-3</footprint>
+      <fields>
+        <field name="Field4">TRANS-08049</field>
+      </fields>
+      <libsource lib="SparkFun-DiscreteSemi" part="TRANS_NPN-MMBT2222AL" description="NPN transistor Current controlled devices typically used to amplify current or used as a switch. &lt;ul&gt;  &lt;li&gt;    BC547 -     &lt;a href=&quot;http://www.sparkfun.com/products/8928&quot;&gt;COM-08928&lt;/a&gt;    (TO-92 45V 100mA) (1.Collector 2.Base 3.Emitter)  &lt;/li&gt;  &lt;li&gt;    2N3904 -     &lt;a href=&quot;http://www.sparkfun.com/products/521&quot;&gt;COM-00521&lt;/a&gt;    (TO-92 40V 200mA) (1.Emitter 2.Base 3.Collector)  &lt;/li&gt;  &lt;li&gt;    P2N2222A -     &lt;a href=&quot;http://www.sparkfun.com/products/12852&quot;&gt;COM-12852&lt;/a&gt;    (TO-92 40V 600mA) (1.Collector 2.Base 3.Emitter)  &lt;/li&gt;&lt;/ul&gt;"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FCFA4D5</tstamp>
+    </comp>
+    <comp ref="MOD1">
+      <value>ESP32-WROOM</value>
+      <footprint>RF_Module:ESP32-WROOM-32</footprint>
+      <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf</datasheet>
+      <fields>
+        <field name="Category">RF/IF and RFID</field>
+        <field name="DK_Datasheet_Link">https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/espressif-systems/ESP32-WROOM-32/1904-1010-1-ND/8544305</field>
+        <field name="Description">SMD MODULE, ESP32-D0WDQ6, 32MBIT</field>
+        <field name="Digi-Key_PN">1904-1010-1-ND</field>
+        <field name="Family">RF Transceiver Modules</field>
+        <field name="MPN">ESP32-WROOM-32</field>
+        <field name="Manufacturer">Espressif Systems</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_RF-Transceiver-Modules" part="ESP32-WROOM-32" description="SMD MODULE, ESP32-D0WDQ6, 32MBIT"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FD8FF8D</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>PWR</value>
+      <footprint>Connectors:JST-2-PTH</footprint>
+      <fields>
+        <field name="Field4">CONN-09863</field>
+      </fields>
+      <libsource lib="SparkFun-Connectors" part="CONN_02JST-PTH-2" description="Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections  &lt;b&gt;On any of the 0.1 inch spaced packages, you can populate with these:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/116&quot;&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/553&quot;&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/115&quot;&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/117&quot;&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/743&quot;&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt; For SCREWTERMINALS and SPRING TERMINALS visit here:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/search/results?term=Screw+Terminals&quot;&gt; Screw Terimnals on SparkFun.com&lt;/a&gt; (5mm/3.5mm/2.54mm spacing)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt;This device is also useful as a general connection point to wire up your design to another part of your project. Our various solder wires solder well into these plated through hole pads.&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11375&quot;&gt; Hook-Up Wire - Assortment (Stranded, 22 AWG)&lt;/a&gt; (PRT-11375)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11367&quot;&gt; Hook-Up Wire - Assortment (Solid Core, 22 AWG)&lt;/a&gt; (PRT-11367)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/categories/141&quot;&gt; View the entire wire category on our website here&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;b&gt;Special notes:&lt;/b&gt; Molex polarized connector foot print use with: PRT-08233 with associated crimp pins and housings.&lt;br&gt;&lt;br&gt;2.54_SCREWTERM for use with  PRT-10571.&lt;br&gt;&lt;br&gt;3.5mm Screw Terminal footprints for  PRT-08084&lt;br&gt;&lt;br&gt;5mm Screw Terminal footprints for use with PRT-08432"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FCFB49F</tstamp>
+    </comp>
+    <comp ref="BT1">
+      <value>BAT 20MM PTH</value>
+      <footprint>Batteries:BATTCOM_20MM_PTH</footprint>
+      <fields>
+        <field name="Field4">BATT-09031</field>
+      </fields>
+      <libsource lib="SparkFun-Batteries" part="BATTERY-20MM_PTH" description="Battery - Single Cell A variety of battery chemistries, sizes, and footprints. Device List:&lt;ul&gt;&lt;li&gt;&lt;b&gt;20MM_PTH - &lt;/b&gt; &lt;a href=&quot;https://www.sparkfun.com/products/783&quot;&gt;Coin Cell Battery Holder - 20mm (PTH)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;6.8MM_PTH - &lt;/b&gt; &lt;a href=&quot;https://www.digikey.com/product-detail/en/seiko-instruments/MS621FE-FL11E/728-1057-ND/1889208?WT.srch=1&amp;gclid=CNOQ5a6LzdQCFZS2wAodXCkE0g&quot;&gt;Coin Cell Battery Holder - 6.8MM(SMD)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;12MM_SMD - &lt;/b&gt; &lt;a href=&quot;https://www.sparkfun.com/products/10592&quot;&gt;Coin Cell Battery Holder - 12mm (SMD)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;12MM_PTH - &lt;/b&gt;&lt;a href=&quot;https://www.sparkfun.com/products/7948&quot;&gt;Coin Cell Battery Holder - 12mm (PTH)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;20MM_SMD - &lt;/b&gt; 20mm Coin Cell Battery Holder (SMD) (2 legs)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Used on the &lt;a href=&quot;https://www.sparkfun.com/products/11734&quot;&gt;Big Time Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;20MM_SMD_4LEGS - &lt;/b&gt; &lt;a href=&quot;https://www.sparkfun.com/products/11892&quot;&gt;Coin Cell Battery Holder - 20mm (SMD)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;20MM_SMD_4LEGS_OVERPASTE - &lt;/b&gt; &lt;a href=&quot;https://www.sparkfun.com/products/11892&quot;&gt;Coin Cell Battery Holder - 20mm (SMD)&lt;/a&gt; (Over-paste on the legs)&lt;/li&gt;&lt;li&gt;&lt;b&gt;24.5MM_PTH - &lt;/b&gt; &lt;a href=&quot;https://www.sparkfun.com/products/8863&quot;&gt;Coin Cell Battery Holder - 24.5mm (PTH)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;9V - &lt;/b&gt; 9V Battery Holder - PC Mount &lt;/li&gt;&lt;ul&gt;&lt;li&gt;Used on the &lt;a href=&quot;https://www.sparkfun.com/products/11177&quot;&gt;SparkFun SparkPunk Sound Kit &lt;/a&gt; and &lt;a href=&quot;https://www.sparkfun.com/products/12707&quot;&gt;SparkFun SparkPunk Sequencer Kit &lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;18650 - &lt;/b&gt; &lt;a href=&quot;https://www.sparkfun.com/products/13113&quot;&gt;Battery Holder - 18650 (PTH)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;AA - &lt;/b&gt; &lt;a href=&quot;https://www.sparkfun.com/products/7949&quot;&gt;Battery Holder - 1xAA (PTH)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;AAA - &lt;/b&gt; &lt;a href=&quot;https://www.sparkfun.com/products/12718&quot;&gt;Battery Holder - 1xAAA (PTH)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;AA_KIT - &lt;/b&gt; &lt;a href=&quot;https://www.sparkfun.com/products/7949&quot;&gt;Battery Holder - 1xAA (PTH)&lt;/a&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Special kit package - pads only have exposed copper on one side of the board.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;AAA_KIT - &lt;/b&gt; &lt;a href=&quot;https://www.sparkfun.com/products/12718&quot;&gt;Battery Holder - 1xAAA (PTH)&lt;/a&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Special kit package - pads only have exposed copper on one side of the board.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FDB6282</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>1k</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FDD6CB0</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10UF</value>
+      <footprint>Capacitors:EIA3216</footprint>
+      <fields>
+        <field name="Field4">CAP-00811</field>
+      </fields>
+      <libsource lib="SparkFun-Capacitors" part="10UF-POLAR-EIA3216-16V-10%_TANT_" description="10.0uF polarized capacitors A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE3654A</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>0.1 UF</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4">CAP-08064</field>
+      </fields>
+      <libsource lib="SparkFun-Capacitors" part="1.0UF-0805-25V-10%" description="1uF ceramic capacitors A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE37468</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE4497F</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>1 UF</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4">CAP-08064</field>
+      </fields>
+      <libsource lib="SparkFun-Capacitors" part="1.0UF-0805-25V-10%" description="1uF ceramic capacitors A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE473B9</tstamp>
+    </comp>
+    <comp ref="Q2">
+      <value>MMBT2222A2</value>
+      <footprint>Silicon-Standard:SOT23-3</footprint>
+      <fields>
+        <field name="Field4">TRANS-08049</field>
+      </fields>
+      <libsource lib="SparkFun-DiscreteSemi" part="TRANS_NPN-MMBT2222AL" description="NPN transistor Current controlled devices typically used to amplify current or used as a switch. &lt;ul&gt;  &lt;li&gt;    BC547 -     &lt;a href=&quot;http://www.sparkfun.com/products/8928&quot;&gt;COM-08928&lt;/a&gt;    (TO-92 45V 100mA) (1.Collector 2.Base 3.Emitter)  &lt;/li&gt;  &lt;li&gt;    2N3904 -     &lt;a href=&quot;http://www.sparkfun.com/products/521&quot;&gt;COM-00521&lt;/a&gt;    (TO-92 40V 200mA) (1.Emitter 2.Base 3.Collector)  &lt;/li&gt;  &lt;li&gt;    P2N2222A -     &lt;a href=&quot;http://www.sparkfun.com/products/12852&quot;&gt;COM-12852&lt;/a&gt;    (TO-92 40V 600mA) (1.Collector 2.Base 3.Emitter)  &lt;/li&gt;&lt;/ul&gt;"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE2E4E9</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Pump_Conn</value>
+      <footprint>Connectors:JST-2-PTH</footprint>
+      <fields>
+        <field name="Field4">CONN-09863</field>
+      </fields>
+      <libsource lib="SparkFun-Connectors" part="CONN_02JST-PTH-2" description="Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections  &lt;b&gt;On any of the 0.1 inch spaced packages, you can populate with these:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/116&quot;&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/553&quot;&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/115&quot;&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/117&quot;&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/743&quot;&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt; For SCREWTERMINALS and SPRING TERMINALS visit here:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/search/results?term=Screw+Terminals&quot;&gt; Screw Terimnals on SparkFun.com&lt;/a&gt; (5mm/3.5mm/2.54mm spacing)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt;This device is also useful as a general connection point to wire up your design to another part of your project. Our various solder wires solder well into these plated through hole pads.&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11375&quot;&gt; Hook-Up Wire - Assortment (Stranded, 22 AWG)&lt;/a&gt; (PRT-11375)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11367&quot;&gt; Hook-Up Wire - Assortment (Solid Core, 22 AWG)&lt;/a&gt; (PRT-11367)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/categories/141&quot;&gt; View the entire wire category on our website here&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;b&gt;Special notes:&lt;/b&gt; Molex polarized connector foot print use with: PRT-08233 with associated crimp pins and housings.&lt;br&gt;&lt;br&gt;2.54_SCREWTERM for use with  PRT-10571.&lt;br&gt;&lt;br&gt;3.5mm Screw Terminal footprints for  PRT-08084&lt;br&gt;&lt;br&gt;5mm Screw Terminal footprints for use with PRT-08432"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE319CF</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>0.1 UF</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4">CAP-08064</field>
+      </fields>
+      <libsource lib="SparkFun-Capacitors" part="1.0UF-0805-25V-10%" description="1uF ceramic capacitors A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE36F2F</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>1k</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE30088</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>470e</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE56620</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>470e</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE57483</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>10k</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE00CC4</tstamp>
+    </comp>
+    <comp ref="S4">
+      <value>EN</value>
+      <footprint>Button_Switch_SMD:SW_SPST_FSMSM</footprint>
+      <fields>
+        <field name="Field4">SWCH-09213</field>
+      </fields>
+      <libsource lib="SparkFun-Switches" part="MOMENTARY-SWITCH-SPST-SMD-4.5MM" description="Momentary Switch (Pushbutton) - SPST Normally-open (NO) SPST momentary switches (buttons, pushbuttons). &lt;h4&gt;Variants&lt;/h4&gt;&lt;h5&gt;PTH-12MM - 12mm square, through-hole&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/9190&quot;&gt;Momentary Pushbutton Switch - 12mm Square&lt;/a&gt; (COM-09190)&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;PTH-6.0MM, PTH-6.0MM-KIT - 6.0mm square, through-hole&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/97&quot;&gt;Mini Pushbutton Switch&lt;/a&gt; (COM-00097)&lt;/li&gt;&lt;li&gt;KIT package intended for soldering kit's - only one side of pads' copper is exposed.&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;PTH-RIGHT-ANGLE-KIT - Right-angle, through-hole&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/10791&quot;&gt;Right Angle Tactile Button&lt;/a&gt; - Used on &lt;a href=&quot;https://www.sparkfun.com/products/11734&quot;&gt;SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-12MM - 12mm square, surface-mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/12993&quot;&gt;Tactile Button - SMD (12mm)&lt;/a&gt; (COM-12993)&lt;/li&gt;&lt;li&gt;Used on &lt;a href=&quot;https://www.sparkfun.com/products/11888&quot;&gt;SparkFun PicoBoard&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-4.5MM - 4.5mm Square Trackball Switch&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;Used on &lt;a href=&quot;https://www.sparkfun.com/products/13169&quot;&gt;SparkFun Blackberry Trackballer Breakout&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-4.6MMX2.8MM -  4.60mm x 2.80mm, surface mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;Used on &lt;a href=&quot;https://www.sparkfun.com/products/13664&quot;&gt;SparkFun SAMD21 Mini Breakout&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-5.2MM, SMD-5.2-REDUNDANT - 5.2mm square, surface-mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/8720&quot;&gt;Mini Pushbutton Switch - SMD&lt;/a&gt; (COM-08720)&lt;/li&gt;&lt;li&gt;Used on &lt;a href=&quot;https://www.sparkfun.com/products/11114&quot;&gt;Arduino Pro Mini&lt;/a&gt;&lt;/li&gt;&lt;li&gt;REDUNDANT package connects both switch circuits together&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-6.0X3.5MM - 6.0 x 3.5mm, surface mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/8229&quot;&gt;Momentary Reset Switch SMD&lt;/a&gt; (COM-08229)&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-6.2MM-TALL - 6.2mm square, surface mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/12992&quot;&gt;Tactile Button - SMD (6mm)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Used on &lt;a href=&quot;https://www.sparkfun.com/products/12651&quot;&gt;SparkFun Digital Sandbox&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-RIGHT-ANGLE - Right-angle, surface mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;Used on &lt;a href=&quot;https://www.sparkfun.com/products/13036&quot;&gt;SparkFun Block for Intel  Edison - Arduino&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE21947</tstamp>
+    </comp>
+    <comp ref="S3">
+      <value>Boot</value>
+      <footprint>Button_Switch_SMD:SW_SPST_FSMSM</footprint>
+      <fields>
+        <field name="Field4">SWCH-09213</field>
+      </fields>
+      <libsource lib="SparkFun-Switches" part="MOMENTARY-SWITCH-SPST-SMD-4.5MM" description="Momentary Switch (Pushbutton) - SPST Normally-open (NO) SPST momentary switches (buttons, pushbuttons). &lt;h4&gt;Variants&lt;/h4&gt;&lt;h5&gt;PTH-12MM - 12mm square, through-hole&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/9190&quot;&gt;Momentary Pushbutton Switch - 12mm Square&lt;/a&gt; (COM-09190)&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;PTH-6.0MM, PTH-6.0MM-KIT - 6.0mm square, through-hole&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/97&quot;&gt;Mini Pushbutton Switch&lt;/a&gt; (COM-00097)&lt;/li&gt;&lt;li&gt;KIT package intended for soldering kit's - only one side of pads' copper is exposed.&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;PTH-RIGHT-ANGLE-KIT - Right-angle, through-hole&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/10791&quot;&gt;Right Angle Tactile Button&lt;/a&gt; - Used on &lt;a href=&quot;https://www.sparkfun.com/products/11734&quot;&gt;SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-12MM - 12mm square, surface-mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/12993&quot;&gt;Tactile Button - SMD (12mm)&lt;/a&gt; (COM-12993)&lt;/li&gt;&lt;li&gt;Used on &lt;a href=&quot;https://www.sparkfun.com/products/11888&quot;&gt;SparkFun PicoBoard&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-4.5MM - 4.5mm Square Trackball Switch&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;Used on &lt;a href=&quot;https://www.sparkfun.com/products/13169&quot;&gt;SparkFun Blackberry Trackballer Breakout&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-4.6MMX2.8MM -  4.60mm x 2.80mm, surface mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;Used on &lt;a href=&quot;https://www.sparkfun.com/products/13664&quot;&gt;SparkFun SAMD21 Mini Breakout&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-5.2MM, SMD-5.2-REDUNDANT - 5.2mm square, surface-mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/8720&quot;&gt;Mini Pushbutton Switch - SMD&lt;/a&gt; (COM-08720)&lt;/li&gt;&lt;li&gt;Used on &lt;a href=&quot;https://www.sparkfun.com/products/11114&quot;&gt;Arduino Pro Mini&lt;/a&gt;&lt;/li&gt;&lt;li&gt;REDUNDANT package connects both switch circuits together&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-6.0X3.5MM - 6.0 x 3.5mm, surface mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/8229&quot;&gt;Momentary Reset Switch SMD&lt;/a&gt; (COM-08229)&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-6.2MM-TALL - 6.2mm square, surface mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/12992&quot;&gt;Tactile Button - SMD (6mm)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Used on &lt;a href=&quot;https://www.sparkfun.com/products/12651&quot;&gt;SparkFun Digital Sandbox&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-RIGHT-ANGLE - Right-angle, surface mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;Used on &lt;a href=&quot;https://www.sparkfun.com/products/13036&quot;&gt;SparkFun Block for Intel  Edison - Arduino&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE24B84</tstamp>
+    </comp>
+    <comp ref="Q4">
+      <value>MMBT2222A2</value>
+      <footprint>Silicon-Standard:SOT23-3</footprint>
+      <fields>
+        <field name="Field4">TRANS-08049</field>
+      </fields>
+      <libsource lib="SparkFun-DiscreteSemi" part="TRANS_NPN-MMBT2222AL" description="NPN transistor Current controlled devices typically used to amplify current or used as a switch. &lt;ul&gt;  &lt;li&gt;    BC547 -     &lt;a href=&quot;http://www.sparkfun.com/products/8928&quot;&gt;COM-08928&lt;/a&gt;    (TO-92 45V 100mA) (1.Collector 2.Base 3.Emitter)  &lt;/li&gt;  &lt;li&gt;    2N3904 -     &lt;a href=&quot;http://www.sparkfun.com/products/521&quot;&gt;COM-00521&lt;/a&gt;    (TO-92 40V 200mA) (1.Emitter 2.Base 3.Collector)  &lt;/li&gt;  &lt;li&gt;    P2N2222A -     &lt;a href=&quot;http://www.sparkfun.com/products/12852&quot;&gt;COM-12852&lt;/a&gt;    (TO-92 40V 600mA) (1.Collector 2.Base 3.Emitter)  &lt;/li&gt;&lt;/ul&gt;"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE82D55</tstamp>
+    </comp>
+    <comp ref="Q3">
+      <value>MMBT2222A2</value>
+      <footprint>Silicon-Standard:SOT23-3</footprint>
+      <fields>
+        <field name="Field4">TRANS-08049</field>
+      </fields>
+      <libsource lib="SparkFun-DiscreteSemi" part="TRANS_NPN-MMBT2222AL" description="NPN transistor Current controlled devices typically used to amplify current or used as a switch. &lt;ul&gt;  &lt;li&gt;    BC547 -     &lt;a href=&quot;http://www.sparkfun.com/products/8928&quot;&gt;COM-08928&lt;/a&gt;    (TO-92 45V 100mA) (1.Collector 2.Base 3.Emitter)  &lt;/li&gt;  &lt;li&gt;    2N3904 -     &lt;a href=&quot;http://www.sparkfun.com/products/521&quot;&gt;COM-00521&lt;/a&gt;    (TO-92 40V 200mA) (1.Emitter 2.Base 3.Collector)  &lt;/li&gt;  &lt;li&gt;    P2N2222A -     &lt;a href=&quot;http://www.sparkfun.com/products/12852&quot;&gt;COM-12852&lt;/a&gt;    (TO-92 40V 600mA) (1.Collector 2.Base 3.Emitter)  &lt;/li&gt;&lt;/ul&gt;"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE87FBA</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>10k</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEAD65C</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>10k</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEB3560</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>0.1 UF</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4">CAP-08064</field>
+      </fields>
+      <libsource lib="SparkFun-Capacitors" part="1.0UF-0805-25V-10%" description="1uF ceramic capacitors A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEF433E</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>BH1750</value>
+      <footprint>Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical</footprint>
+      <fields>
+        <field name="Field4">CONN-13251</field>
+      </fields>
+      <libsource lib="SparkFun-Connectors" part="CONN_04JST-PTH-VERT" description="Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections  &lt;b&gt;On any of the 0.1 inch spaced packages, you can populate with these:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/116&quot;&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/553&quot;&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/115&quot;&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/117&quot;&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/743&quot;&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt; For SCREWTERMINALS and SPRING TERMINALS visit here:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/search/results?term=Screw+Terminals&quot;&gt; Screw Terimnals on SparkFun.com&lt;/a&gt; (5mm/3.5mm/2.54mm spacing)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt;This device is also useful as a general connection point to wire up your design to another part of your project. Our various solder wires solder well into these plated through hole pads.&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11375&quot;&gt; Hook-Up Wire - Assortment (Stranded, 22 AWG)&lt;/a&gt; (PRT-11375)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11367&quot;&gt; Hook-Up Wire - Assortment (Solid Core, 22 AWG)&lt;/a&gt; (PRT-11367)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/categories/141&quot;&gt; View the entire wire category on our website here&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;b&gt;Special notes:&lt;/b&gt;   Molex polarized connector foot print use with SKU : PRT-08231 with associated crimp pins and housings. 1MM SMD Version SKU: PRT-10208"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FDD2603</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FDE2B67</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>10k</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE2CC87</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>10k</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE2604F</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>10k</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE27779</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>10k</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE34D49</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>470e</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE4A4CF</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>0805</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF4720A</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>0805</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FF4C111</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>10k</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6003D106</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>10k</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6004BEE8</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>MIC5219-3v3</value>
+      <footprint>Package_TO_SOT_SMD:SOT-23-5</footprint>
+      <datasheet>http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579712</datasheet>
+      <fields>
+        <field name="Category">Integrated Circuits (ICs)</field>
+        <field name="DK_Datasheet_Link">http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579712</field>
+        <field name="DK_Detail_Page">/product-detail/en/microchip-technology/MIC5219-3.3YM5-TR/576-1281-1-ND/771902</field>
+        <field name="Description">IC REG LINEAR 3.3V 500MA SOT23-5</field>
+        <field name="Digi-Key_PN">576-1281-1-ND</field>
+        <field name="Family">PMIC - Voltage Regulators - Linear</field>
+        <field name="MPN">MIC5219-3.3YM5-TR</field>
+        <field name="Manufacturer">Microchip Technology</field>
+        <field name="Status">Active</field>
+      </fields>
+      <libsource lib="dk_PMIC-Voltage-Regulators-Linear" part="MIC5219-3_3YM5-TR" description="IC REG LINEAR 3.3V 500MA SOT23-5"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60085445</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>470 pF</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4">CAP-08064</field>
+      </fields>
+      <libsource lib="SparkFun-Capacitors" part="1.0UF-0805-25V-10%" description="1uF ceramic capacitors A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>600CE5F7</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>2.2 uF</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4">CAP-08064</field>
+      </fields>
+      <libsource lib="SparkFun-Capacitors" part="1.0UF-0805-25V-10%" description="1uF ceramic capacitors A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>600D1EFA</tstamp>
+    </comp>
+    <comp ref="S1">
+      <value>ON/OFF</value>
+      <footprint>Switches:SWITCH_SPDT_PTH_11.6X4.0MM</footprint>
+      <fields>
+        <field name="Field4">SWCH-08261</field>
+      </fields>
+      <libsource lib="SparkFun-Switches" part="SWITCH-SPDT-PTH-11.6X4.0MM" description="Single Pole, Double Throw (SPDT) Switch Single-pole, double-throw (SPDT) switch. &lt;h4&gt;Variant Overview&lt;/h4&gt;&lt;h5&gt;SMD-AYZ0202&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/597&quot;&gt;Surface Mount DPDT Switch&lt;/a&gt; (COM-00597)&lt;/li&gt;&lt;li&gt;Used on e.g. &lt;a href=&quot;https://www.sparkfun.com/products/12049&quot;&gt;LilyPad Arduino USB - ATmega32U4 Board&lt;/a&gt;&lt;/ul&gt;&lt;h5&gt;PTH-11.6X4.0MM&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/102&quot;&gt;SPDT Mini Power Switch&lt;/a&gt; (COM-00102)&lt;/li&gt;&lt;li&gt;Used on e.g. &lt;a href=&quot;https://www.sparkfun.com/products/10547&quot;&gt;SparkFun Simon Says - Through-Hole Soldering Kit&lt;/a&gt; (KIT-10547)&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;PTH-11.6X4.0MM-KIT&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;KIT version of SPDT Mini Power Switch - Simplifies soldering by removing tStop of switch pins - only one side can be soldered.&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;PTH-11.6X4.0MM-LOCK&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;LOCK version of SPDT Mini Power Switch - Offset pins hold switch in place for easier soldering.&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-RIGHT-ANGLE&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/10860&quot;&gt;Surface Mount Right Angle Switch&lt;/a&gt; (COM-10860)&lt;/li&gt;&lt;li&gt;Used on e.g. &lt;a href=&quot;https://www.sparkfun.com/products/13231&quot;&gt;SparkFun ESP8266 Thing&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60133F9C</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>0805</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6016D2B5</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>0805</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6016D85A</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>1N4001</value>
+      <footprint>Diode_SMD:D_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/88503/1n4001.pdf</datasheet>
+      <libsource lib="Diode" part="1N4001" description="50V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6021B885</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>HTUI2D</value>
+      <footprint>Connector_JST:JST_EH_B4B-EH-A_1x04_P2.50mm_Vertical</footprint>
+      <fields>
+        <field name="Field4">CONN-13251</field>
+      </fields>
+      <libsource lib="SparkFun-Connectors" part="CONN_04JST-PTH-VERT" description="Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections  &lt;b&gt;On any of the 0.1 inch spaced packages, you can populate with these:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/116&quot;&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/553&quot;&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/115&quot;&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/117&quot;&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/743&quot;&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt; For SCREWTERMINALS and SPRING TERMINALS visit here:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/search/results?term=Screw+Terminals&quot;&gt; Screw Terimnals on SparkFun.com&lt;/a&gt; (5mm/3.5mm/2.54mm spacing)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt;This device is also useful as a general connection point to wire up your design to another part of your project. Our various solder wires solder well into these plated through hole pads.&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11375&quot;&gt; Hook-Up Wire - Assortment (Stranded, 22 AWG)&lt;/a&gt; (PRT-11375)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11367&quot;&gt; Hook-Up Wire - Assortment (Solid Core, 22 AWG)&lt;/a&gt; (PRT-11367)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/categories/141&quot;&gt; View the entire wire category on our website here&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;b&gt;Special notes:&lt;/b&gt;   Molex polarized connector foot print use with SKU : PRT-08231 with associated crimp pins and housings. 1MM SMD Version SKU: PRT-10208"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6027F15E</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Soil_Moisture</value>
+      <footprint>Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical</footprint>
+      <fields>
+        <field name="Field4">CONN-13230</field>
+      </fields>
+      <libsource lib="SparkFun-Connectors" part="CONN_03JST-PTH-VERT" description="Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections  &lt;b&gt;On any of the 0.1 inch spaced packages, you can populate with these:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/116&quot;&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/553&quot;&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/115&quot;&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/117&quot;&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/743&quot;&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/13875&quot;&gt; Stackable Header - 3 Pin (Female, 0.1&quot;)&lt;/a&gt; (PRT-13875)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt; For SCREWTERMINALS and SPRING TERMINALS visit here:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/search/results?term=Screw+Terminals&quot;&gt; Screw Terimnals on SparkFun.com&lt;/a&gt; (5mm/3.5mm/2.54mm spacing)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt;This device is also useful as a general connection point to wire up your design to another part of your project. Our various solder wires solder well into these plated through hole pads.&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11375&quot;&gt; Hook-Up Wire - Assortment (Stranded, 22 AWG)&lt;/a&gt; (PRT-11375)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11367&quot;&gt; Hook-Up Wire - Assortment (Solid Core, 22 AWG)&lt;/a&gt; (PRT-11367)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/categories/141&quot;&gt; View the entire wire category on our website here&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;b&gt;Special notes:&lt;/b&gt;     Molex polarized connector foot print use with SKU : PRT-08232 with associated crimp pins and housings."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6028576F</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Switch_Conn</value>
+      <footprint>Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical</footprint>
+      <fields>
+        <field name="Field4">CONN-13230</field>
+      </fields>
+      <libsource lib="SparkFun-Connectors" part="CONN_03JST-PTH-VERT" description="Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections  &lt;b&gt;On any of the 0.1 inch spaced packages, you can populate with these:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/116&quot;&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/553&quot;&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/115&quot;&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/117&quot;&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/743&quot;&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/13875&quot;&gt; Stackable Header - 3 Pin (Female, 0.1&quot;)&lt;/a&gt; (PRT-13875)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt; For SCREWTERMINALS and SPRING TERMINALS visit here:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/search/results?term=Screw+Terminals&quot;&gt; Screw Terimnals on SparkFun.com&lt;/a&gt; (5mm/3.5mm/2.54mm spacing)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt;This device is also useful as a general connection point to wire up your design to another part of your project. Our various solder wires solder well into these plated through hole pads.&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11375&quot;&gt; Hook-Up Wire - Assortment (Stranded, 22 AWG)&lt;/a&gt; (PRT-11375)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11367&quot;&gt; Hook-Up Wire - Assortment (Solid Core, 22 AWG)&lt;/a&gt; (PRT-11367)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/categories/141&quot;&gt; View the entire wire category on our website here&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;b&gt;Special notes:&lt;/b&gt;     Molex polarized connector foot print use with SKU : PRT-08232 with associated crimp pins and housings."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6028B926</tstamp>
+    </comp>
+    <comp ref="J10">
+      <value>DHT22</value>
+      <footprint>Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical</footprint>
+      <fields>
+        <field name="Field4">CONN-13230</field>
+      </fields>
+      <libsource lib="SparkFun-Connectors" part="CONN_03JST-PTH-VERT" description="Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections  &lt;b&gt;On any of the 0.1 inch spaced packages, you can populate with these:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/116&quot;&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/553&quot;&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/115&quot;&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/117&quot;&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/743&quot;&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/13875&quot;&gt; Stackable Header - 3 Pin (Female, 0.1&quot;)&lt;/a&gt; (PRT-13875)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt; For SCREWTERMINALS and SPRING TERMINALS visit here:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/search/results?term=Screw+Terminals&quot;&gt; Screw Terimnals on SparkFun.com&lt;/a&gt; (5mm/3.5mm/2.54mm spacing)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt;This device is also useful as a general connection point to wire up your design to another part of your project. Our various solder wires solder well into these plated through hole pads.&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11375&quot;&gt; Hook-Up Wire - Assortment (Stranded, 22 AWG)&lt;/a&gt; (PRT-11375)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11367&quot;&gt; Hook-Up Wire - Assortment (Solid Core, 22 AWG)&lt;/a&gt; (PRT-11367)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/categories/141&quot;&gt; View the entire wire category on our website here&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;b&gt;Special notes:&lt;/b&gt;     Molex polarized connector foot print use with SKU : PRT-08232 with associated crimp pins and housings."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60291D3B</tstamp>
+    </comp>
+    <comp ref="J11">
+      <value>DS18B20</value>
+      <footprint>Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical</footprint>
+      <fields>
+        <field name="Field4">CONN-13230</field>
+      </fields>
+      <libsource lib="SparkFun-Connectors" part="CONN_03JST-PTH-VERT" description="Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections  &lt;b&gt;On any of the 0.1 inch spaced packages, you can populate with these:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/116&quot;&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/553&quot;&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/115&quot;&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/117&quot;&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/743&quot;&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/13875&quot;&gt; Stackable Header - 3 Pin (Female, 0.1&quot;)&lt;/a&gt; (PRT-13875)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt; For SCREWTERMINALS and SPRING TERMINALS visit here:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/search/results?term=Screw+Terminals&quot;&gt; Screw Terimnals on SparkFun.com&lt;/a&gt; (5mm/3.5mm/2.54mm spacing)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt;This device is also useful as a general connection point to wire up your design to another part of your project. Our various solder wires solder well into these plated through hole pads.&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11375&quot;&gt; Hook-Up Wire - Assortment (Stranded, 22 AWG)&lt;/a&gt; (PRT-11375)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11367&quot;&gt; Hook-Up Wire - Assortment (Solid Core, 22 AWG)&lt;/a&gt; (PRT-11367)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/categories/141&quot;&gt; View the entire wire category on our website here&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;b&gt;Special notes:&lt;/b&gt;     Molex polarized connector foot print use with SKU : PRT-08232 with associated crimp pins and housings."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60296030</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>LED_CONN</value>
+      <footprint>Connector_JST:JST_EH_B3B-EH-A_1x03_P2.50mm_Vertical</footprint>
+      <fields>
+        <field name="Field4">CONN-13230</field>
+      </fields>
+      <libsource lib="SparkFun-Connectors" part="CONN_03JST-PTH-VERT" description="Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections  &lt;b&gt;On any of the 0.1 inch spaced packages, you can populate with these:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/116&quot;&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/553&quot;&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/115&quot;&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/117&quot;&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/743&quot;&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/13875&quot;&gt; Stackable Header - 3 Pin (Female, 0.1&quot;)&lt;/a&gt; (PRT-13875)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt; For SCREWTERMINALS and SPRING TERMINALS visit here:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/search/results?term=Screw+Terminals&quot;&gt; Screw Terimnals on SparkFun.com&lt;/a&gt; (5mm/3.5mm/2.54mm spacing)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt;This device is also useful as a general connection point to wire up your design to another part of your project. Our various solder wires solder well into these plated through hole pads.&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11375&quot;&gt; Hook-Up Wire - Assortment (Stranded, 22 AWG)&lt;/a&gt; (PRT-11375)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11367&quot;&gt; Hook-Up Wire - Assortment (Solid Core, 22 AWG)&lt;/a&gt; (PRT-11367)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/categories/141&quot;&gt; View the entire wire category on our website here&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;b&gt;Special notes:&lt;/b&gt;     Molex polarized connector foot print use with SKU : PRT-08232 with associated crimp pins and housings."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6029CFE4</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>Prog_Header</value>
+      <footprint>Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Connector_Generic" part="Conn_01x06" description="Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>602A8E62</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>1N4001</value>
+      <footprint>Diode_SMD:D_0805_2012Metric</footprint>
+      <datasheet>http://www.vishay.com/docs/88503/1n4001.pdf</datasheet>
+      <libsource lib="Diode" part="1N4001" description="50V 1A General Purpose Rectifier Diode, DO-41"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6023B17B</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>10k</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>602F73AB</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>10k</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>602F82E0</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>AMS1117-3.3</value>
+      <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
+      <datasheet>http://www.advanced-monolithic.com/pdf/ds1117.pdf</datasheet>
+      <libsource lib="Regulator_Linear" part="AMS1117-3.3" description="1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>604261E4</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>0.1 UF</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4">CAP-08064</field>
+      </fields>
+      <libsource lib="SparkFun-Capacitors" part="1.0UF-0805-25V-10%" description="1uF ceramic capacitors A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6043694E</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>10UF</value>
+      <footprint>Capacitors:EIA3216</footprint>
+      <fields>
+        <field name="Field4">CAP-00811</field>
+      </fields>
+      <libsource lib="SparkFun-Capacitors" part="10UF-POLAR-EIA3216-16V-10%_TANT_" description="10.0uF polarized capacitors A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6043EB79</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>10UF</value>
+      <footprint>Capacitors:EIA3216</footprint>
+      <fields>
+        <field name="Field4">CAP-00811</field>
+      </fields>
+      <libsource lib="SparkFun-Capacitors" part="10UF-POLAR-EIA3216-16V-10%_TANT_" description="10.0uF polarized capacitors A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>60487A5C</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>0.1 UF</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4">CAP-08064</field>
+      </fields>
+      <libsource lib="SparkFun-Capacitors" part="1.0UF-0805-25V-10%" description="1uF ceramic capacitors A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>6048877B</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>B_LED</value>
+      <footprint>LED:LED-1206</footprint>
+      <fields>
+        <field name="Field4">DIO-09911</field>
+      </fields>
+      <libsource lib="SparkFun-LED" part="LED-BLUE1206" description="Blue SMD LED Used in manufacturing of various products at SparkFun &lt;b&gt;Packages:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;0603&lt;/b&gt; - SMD 0603 package &lt;a href=&quot;http://www.digikey.com/product-detail/en/SMLE12BC7TT86/511-1589-2-ND/1641808&quot;&gt;[Product Link]&lt;/li&gt;&lt;li&gt;&lt;b&gt;1206&lt;/b&gt; - SMD1206  package &lt;a href=&quot;http://www.digikey.com/product-detail/en/lite-on-inc/LTST-C150TBKT/160-1643-1-ND/573584&quot;&gt;[Product Link]&lt;/li&gt;&lt;ul&gt; &lt;b&gt;SparkFun Products:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href= https://www.sparkfun.com/products/13711 &gt;ESP8266 Thing-Dev Board&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href= https://www.sparkfun.com/products/12757 &gt;RedBoard&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE01449</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>470e</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE059EE</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>PWR_LED</value>
+      <footprint>LED:LED-1206</footprint>
+      <fields>
+        <field name="Field4">DIO-09911</field>
+      </fields>
+      <libsource lib="SparkFun-LED" part="LED-BLUE1206" description="Blue SMD LED Used in manufacturing of various products at SparkFun &lt;b&gt;Packages:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;0603&lt;/b&gt; - SMD 0603 package &lt;a href=&quot;http://www.digikey.com/product-detail/en/SMLE12BC7TT86/511-1589-2-ND/1641808&quot;&gt;[Product Link]&lt;/li&gt;&lt;li&gt;&lt;b&gt;1206&lt;/b&gt; - SMD1206  package &lt;a href=&quot;http://www.digikey.com/product-detail/en/lite-on-inc/LTST-C150TBKT/160-1643-1-ND/573584&quot;&gt;[Product Link]&lt;/li&gt;&lt;ul&gt; &lt;b&gt;SparkFun Products:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href= https://www.sparkfun.com/products/13711 &gt;ESP8266 Thing-Dev Board&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href= https://www.sparkfun.com/products/12757 &gt;RedBoard&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEC9A52</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>470e</value>
+      <footprint>0805</footprint>
+      <fields>
+        <field name="Field4"> </field>
+      </fields>
+      <libsource lib="SparkFun-Resistors" part="RESISTOR0805" description="Generic Resistor Package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FEC9DD5</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>CONN_10</value>
+      <footprint>Connector_PinHeader_1.27mm:PinHeader_1x10_P1.27mm_Vertical</footprint>
+      <fields>
+        <field name="Field4">XXX-00000</field>
+      </fields>
+      <libsource lib="SparkFun-Connectors" part="CONN_10LOCK" description="Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections  &lt;b&gt;On any of the 0.1 inch spaced packages, you can populate with these:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/116&quot;&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/553&quot;&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/115&quot;&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/117&quot;&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/743&quot;&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11376&quot;&gt; Arduino Stackable Header - 10 Pin&lt;/a&gt; (PRT-11376)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt; For SCREWTERMINALS and SPRING TERMINALS visit here:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/search/results?term=Screw+Terminals&quot;&gt; Screw Terimnals on SparkFun.com&lt;/a&gt; (5mm/3.5mm/2.54mm spacing)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt;This device is also useful as a general connection point to wire up your design to another part of your project. Our various solder wires solder well into these plated through hole pads.&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11375&quot;&gt; Hook-Up Wire - Assortment (Stranded, 22 AWG)&lt;/a&gt; (PRT-11375)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/products/11367&quot;&gt; Hook-Up Wire - Assortment (Solid Core, 22 AWG)&lt;/a&gt; (PRT-11367)&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;https://www.sparkfun.com/categories/141&quot;&gt; View the entire wire category on our website here&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;b&gt;Special notes:&lt;/b&gt;   Molex polarized connector foot print use with SKU : PRT-08231 with associated crimp pins and housings. 1MM SMD Version SKU: PRT-10208 NOTES ON THE VARIANTS LOCK and LOCK_LONGPADS...This footprint was designed to help hold the alignment of a through-hole component (i.e.  6-pin header) while soldering it into place. You may notice that each hole has been shifted either up or down by 0.005 of an inch from it's more standard position (which is a perfectly straight line).  This slight alteration caused the pins (the squares in the middle) to touch the edges of the holes.  Because they are alternating, it causes a &quot;brace&quot; to hold the component in place.  0.005 has proven to be the perfect amount of &quot;off-center&quot; position when using our standard breakaway headers. Although looks a little odd when you look at the bare footprint, once you have a header in there, the alteration is very hard to notice.  Also,if you push a header all the way into place, it is covered up entirely on the bottom side."/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FE833E6</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Connector_Generic" part="Conn_01x06">
+      <description>Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_1x??_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x06</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+        <pin num="5" name="Pin_5" type="passive"/>
+        <pin num="6" name="Pin_6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Diode" part="1N4001">
+      <aliases>
+        <alias>1N4002</alias>
+        <alias>1N4003</alias>
+        <alias>1N4004</alias>
+        <alias>1N4005</alias>
+        <alias>1N4006</alias>
+        <alias>1N4007</alias>
+        <alias>BA157</alias>
+        <alias>BA158</alias>
+        <alias>BA159</alias>
+      </aliases>
+      <description>50V 1A General Purpose Rectifier Diode, DO-41</description>
+      <docs>http://www.vishay.com/docs/88503/1n4001.pdf</docs>
+      <footprints>
+        <fp>D*DO?41*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N4001</field>
+        <field name="Footprint">Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Regulator_Linear" part="AP1117-15">
+      <aliases>
+        <alias>AP1117-18</alias>
+        <alias>AP1117-25</alias>
+        <alias>AP1117-33</alias>
+        <alias>AP1117-50</alias>
+        <alias>LD1117S33TR_SOT223</alias>
+        <alias>LD1117S12TR_SOT223</alias>
+        <alias>LD1117S18TR_SOT223</alias>
+        <alias>LD1117S25TR_SOT223</alias>
+        <alias>LD1117S50TR_SOT223</alias>
+        <alias>NCP1117-12_SOT223</alias>
+        <alias>NCP1117-1.5_SOT223</alias>
+        <alias>NCP1117-1.8_SOT223</alias>
+        <alias>NCP1117-2.0_SOT223</alias>
+        <alias>NCP1117-2.5_SOT223</alias>
+        <alias>NCP1117-2.85_SOT223</alias>
+        <alias>NCP1117-3.3_SOT223</alias>
+        <alias>NCP1117-5.0_SOT223</alias>
+        <alias>AMS1117-1.5</alias>
+        <alias>AMS1117-1.8</alias>
+        <alias>AMS1117-2.5</alias>
+        <alias>AMS1117-2.85</alias>
+        <alias>AMS1117-3.3</alias>
+        <alias>AMS1117-5.0</alias>
+      </aliases>
+      <description>1A Low Dropout regulator, positive, 1.5V fixed output, SOT-223</description>
+      <docs>http://www.diodes.com/datasheets/AP1117.pdf</docs>
+      <footprints>
+        <fp>SOT?223*TabPin2*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">AP1117-15</field>
+        <field name="Footprint">Package_TO_SOT_SMD:SOT-223-3_TabPin2</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="VO" type="power_out"/>
+        <pin num="3" name="VI" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SSD1306-128x64_OLED" part="SSD1306">
+      <description>SSD1306 OLED</description>
+      <footprints>
+        <fp>SSD1306-128x64_OLED:SSD1306</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Brd</field>
+        <field name="Value">SSD1306</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="input"/>
+        <pin num="2" name="VCC" type="input"/>
+        <pin num="3" name="SCL" type="input"/>
+        <pin num="4" name="SDA" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="SparkFun-Batteries" part="BATTERY-20MM_PTH">
+      <description>Battery - Single Cell A variety of battery chemistries, sizes, and footprints. Device List:&lt;ul&gt;&lt;li&gt;&lt;b&gt;20MM_PTH - &lt;/b&gt; &lt;a href="https://www.sparkfun.com/products/783"&gt;Coin Cell Battery Holder - 20mm (PTH)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;6.8MM_PTH - &lt;/b&gt; &lt;a href="https://www.digikey.com/product-detail/en/seiko-instruments/MS621FE-FL11E/728-1057-ND/1889208?WT.srch=1&amp;gclid=CNOQ5a6LzdQCFZS2wAodXCkE0g"&gt;Coin Cell Battery Holder - 6.8MM(SMD)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;12MM_SMD - &lt;/b&gt; &lt;a href="https://www.sparkfun.com/products/10592"&gt;Coin Cell Battery Holder - 12mm (SMD)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;12MM_PTH - &lt;/b&gt;&lt;a href="https://www.sparkfun.com/products/7948"&gt;Coin Cell Battery Holder - 12mm (PTH)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;20MM_SMD - &lt;/b&gt; 20mm Coin Cell Battery Holder (SMD) (2 legs)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Used on the &lt;a href="https://www.sparkfun.com/products/11734"&gt;Big Time Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;20MM_SMD_4LEGS - &lt;/b&gt; &lt;a href="https://www.sparkfun.com/products/11892"&gt;Coin Cell Battery Holder - 20mm (SMD)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;20MM_SMD_4LEGS_OVERPASTE - &lt;/b&gt; &lt;a href="https://www.sparkfun.com/products/11892"&gt;Coin Cell Battery Holder - 20mm (SMD)&lt;/a&gt; (Over-paste on the legs)&lt;/li&gt;&lt;li&gt;&lt;b&gt;24.5MM_PTH - &lt;/b&gt; &lt;a href="https://www.sparkfun.com/products/8863"&gt;Coin Cell Battery Holder - 24.5mm (PTH)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;9V - &lt;/b&gt; 9V Battery Holder - PC Mount &lt;/li&gt;&lt;ul&gt;&lt;li&gt;Used on the &lt;a href="https://www.sparkfun.com/products/11177"&gt;SparkFun SparkPunk Sound Kit &lt;/a&gt; and &lt;a href="https://www.sparkfun.com/products/12707"&gt;SparkFun SparkPunk Sequencer Kit &lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;18650 - &lt;/b&gt; &lt;a href="https://www.sparkfun.com/products/13113"&gt;Battery Holder - 18650 (PTH)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;AA - &lt;/b&gt; &lt;a href="https://www.sparkfun.com/products/7949"&gt;Battery Holder - 1xAA (PTH)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;AAA - &lt;/b&gt; &lt;a href="https://www.sparkfun.com/products/12718"&gt;Battery Holder - 1xAAA (PTH)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;AA_KIT - &lt;/b&gt; &lt;a href="https://www.sparkfun.com/products/7949"&gt;Battery Holder - 1xAA (PTH)&lt;/a&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Special kit package - pads only have exposed copper on one side of the board.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;AAA_KIT - &lt;/b&gt; &lt;a href="https://www.sparkfun.com/products/12718"&gt;Battery Holder - 1xAAA (PTH)&lt;/a&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;Special kit package - pads only have exposed copper on one side of the board.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;</description>
+      <footprints>
+        <fp>*BATTCOM_20MM_PTH*</fp>
+        <fp>*BATTCON_20MM*</fp>
+        <fp>*BATTCON_20MM_4LEGS_OVERPASTE*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">BT</field>
+        <field name="Value">BATTERY-20MM_PTH</field>
+        <field name="Footprint">BATTCOM_20MM_PTH</field>
+        <field name="Field4">BATT-09031</field>
+      </fields>
+      <pins>
+        <pin num="1" name="+" type="power_in"/>
+        <pin num="2" name="-" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="SparkFun-Capacitors" part="1.0UF-0805-25V-10%">
+      <description>1uF ceramic capacitors A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.</description>
+      <footprints>
+        <fp>*0805*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1.0UF-0805-25V-10%</field>
+        <field name="Footprint">0805</field>
+        <field name="Field4">CAP-08064</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SparkFun-Capacitors" part="10UF-POLAR-EIA3216-16V-10%_TANT_">
+      <description>10.0uF polarized capacitors A capacitor is a passive two-terminal electrical component used to store electrical energy temporarily in an electric field.</description>
+      <footprints>
+        <fp>*EIA3216*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">10UF-POLAR-EIA3216-16V-10%_TANT_</field>
+        <field name="Footprint">EIA3216</field>
+        <field name="Field4">CAP-00811</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="passive"/>
+        <pin num="-" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SparkFun-Connectors" part="CONN_02JST-PTH-2">
+      <description>Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections  &lt;b&gt;On any of the 0.1 inch spaced packages, you can populate with these:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/116"&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/553"&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/115"&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/117"&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/743"&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt; For SCREWTERMINALS and SPRING TERMINALS visit here:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/search/results?term=Screw+Terminals"&gt; Screw Terimnals on SparkFun.com&lt;/a&gt; (5mm/3.5mm/2.54mm spacing)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt;This device is also useful as a general connection point to wire up your design to another part of your project. Our various solder wires solder well into these plated through hole pads.&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11375"&gt; Hook-Up Wire - Assortment (Stranded, 22 AWG)&lt;/a&gt; (PRT-11375)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11367"&gt; Hook-Up Wire - Assortment (Solid Core, 22 AWG)&lt;/a&gt; (PRT-11367)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/categories/141"&gt; View the entire wire category on our website here&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;b&gt;Special notes:&lt;/b&gt; Molex polarized connector foot print use with: PRT-08233 with associated crimp pins and housings.&lt;br&gt;&lt;br&gt;2.54_SCREWTERM for use with  PRT-10571.&lt;br&gt;&lt;br&gt;3.5mm Screw Terminal footprints for  PRT-08084&lt;br&gt;&lt;br&gt;5mm Screw Terminal footprints for use with PRT-08432</description>
+      <footprints>
+        <fp>*JST-2-PTH*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_02JST-PTH-2</field>
+        <field name="Footprint">JST-2-PTH</field>
+        <field name="Field4">CONN-09863</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SparkFun-Connectors" part="CONN_03JST-PTH-VERT">
+      <description>Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections  &lt;b&gt;On any of the 0.1 inch spaced packages, you can populate with these:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/116"&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/553"&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/115"&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/117"&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/743"&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/13875"&gt; Stackable Header - 3 Pin (Female, 0.1")&lt;/a&gt; (PRT-13875)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt; For SCREWTERMINALS and SPRING TERMINALS visit here:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/search/results?term=Screw+Terminals"&gt; Screw Terimnals on SparkFun.com&lt;/a&gt; (5mm/3.5mm/2.54mm spacing)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt;This device is also useful as a general connection point to wire up your design to another part of your project. Our various solder wires solder well into these plated through hole pads.&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11375"&gt; Hook-Up Wire - Assortment (Stranded, 22 AWG)&lt;/a&gt; (PRT-11375)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11367"&gt; Hook-Up Wire - Assortment (Solid Core, 22 AWG)&lt;/a&gt; (PRT-11367)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/categories/141"&gt; View the entire wire category on our website here&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;b&gt;Special notes:&lt;/b&gt;     Molex polarized connector foot print use with SKU : PRT-08232 with associated crimp pins and housings.</description>
+      <footprints>
+        <fp>*JST-3-PTH-VERT*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_03JST-PTH-VERT</field>
+        <field name="Footprint">JST-3-PTH-VERT</field>
+        <field name="Field4">CONN-13230</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SparkFun-Connectors" part="CONN_04JST-PTH-VERT">
+      <description>Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections  &lt;b&gt;On any of the 0.1 inch spaced packages, you can populate with these:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/116"&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/553"&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/115"&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/117"&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/743"&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt; For SCREWTERMINALS and SPRING TERMINALS visit here:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/search/results?term=Screw+Terminals"&gt; Screw Terimnals on SparkFun.com&lt;/a&gt; (5mm/3.5mm/2.54mm spacing)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt;This device is also useful as a general connection point to wire up your design to another part of your project. Our various solder wires solder well into these plated through hole pads.&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11375"&gt; Hook-Up Wire - Assortment (Stranded, 22 AWG)&lt;/a&gt; (PRT-11375)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11367"&gt; Hook-Up Wire - Assortment (Solid Core, 22 AWG)&lt;/a&gt; (PRT-11367)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/categories/141"&gt; View the entire wire category on our website here&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;b&gt;Special notes:&lt;/b&gt;   Molex polarized connector foot print use with SKU : PRT-08231 with associated crimp pins and housings. 1MM SMD Version SKU: PRT-10208</description>
+      <footprints>
+        <fp>*JST-4-PTH-VERT*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_04JST-PTH-VERT</field>
+        <field name="Footprint">JST-4-PTH-VERT</field>
+        <field name="Field4">CONN-13251</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SparkFun-Connectors" part="CONN_10LOCK">
+      <description>Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections  &lt;b&gt;On any of the 0.1 inch spaced packages, you can populate with these:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/116"&gt; Break Away Headers - Straight&lt;/a&gt; (PRT-00116)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/553"&gt; Break Away Male Headers - Right Angle&lt;/a&gt; (PRT-00553)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/115"&gt; Female Headers&lt;/a&gt; (PRT-00115)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/117"&gt; Break Away Headers - Machine Pin&lt;/a&gt; (PRT-00117)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/743"&gt; Break Away Female Headers - Swiss Machine Pin&lt;/a&gt; (PRT-00743)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11376"&gt; Arduino Stackable Header - 10 Pin&lt;/a&gt; (PRT-11376)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt; For SCREWTERMINALS and SPRING TERMINALS visit here:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/search/results?term=Screw+Terminals"&gt; Screw Terimnals on SparkFun.com&lt;/a&gt; (5mm/3.5mm/2.54mm spacing)&lt;/li&gt;&lt;/ul&gt; &lt;b&gt;This device is also useful as a general connection point to wire up your design to another part of your project. Our various solder wires solder well into these plated through hole pads.&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11375"&gt; Hook-Up Wire - Assortment (Stranded, 22 AWG)&lt;/a&gt; (PRT-11375)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/11367"&gt; Hook-Up Wire - Assortment (Solid Core, 22 AWG)&lt;/a&gt; (PRT-11367)&lt;/li&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/categories/141"&gt; View the entire wire category on our website here&lt;/a&gt;&lt;/li&gt; &lt;/ul&gt; &lt;b&gt;Special notes:&lt;/b&gt;   Molex polarized connector foot print use with SKU : PRT-08231 with associated crimp pins and housings. 1MM SMD Version SKU: PRT-10208 NOTES ON THE VARIANTS LOCK and LOCK_LONGPADS...This footprint was designed to help hold the alignment of a through-hole component (i.e.  6-pin header) while soldering it into place. You may notice that each hole has been shifted either up or down by 0.005 of an inch from it's more standard position (which is a perfectly straight line).  This slight alteration caused the pins (the squares in the middle) to touch the edges of the holes.  Because they are alternating, it causes a "brace" to hold the component in place.  0.005 has proven to be the perfect amount of "off-center" position when using our standard breakaway headers. Although looks a little odd when you look at the bare footprint, once you have a header in there, the alteration is very hard to notice.  Also,if you push a header all the way into place, it is covered up entirely on the bottom side.</description>
+      <footprints>
+        <fp>*1X10_LOCK*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_10LOCK</field>
+        <field name="Footprint">1X10_LOCK</field>
+        <field name="Field4">XXX-00000</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+        <pin num="6" name="6" type="passive"/>
+        <pin num="7" name="7" type="passive"/>
+        <pin num="8" name="8" type="passive"/>
+        <pin num="9" name="9" type="passive"/>
+        <pin num="10" name="10" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SparkFun-DiscreteSemi" part="TRANS_NPN-MMBT2222AL">
+      <description>NPN transistor Current controlled devices typically used to amplify current or used as a switch. &lt;ul&gt;  &lt;li&gt;    BC547 -     &lt;a href="http://www.sparkfun.com/products/8928"&gt;COM-08928&lt;/a&gt;    (TO-92 45V 100mA) (1.Collector 2.Base 3.Emitter)  &lt;/li&gt;  &lt;li&gt;    2N3904 -     &lt;a href="http://www.sparkfun.com/products/521"&gt;COM-00521&lt;/a&gt;    (TO-92 40V 200mA) (1.Emitter 2.Base 3.Collector)  &lt;/li&gt;  &lt;li&gt;    P2N2222A -     &lt;a href="http://www.sparkfun.com/products/12852"&gt;COM-12852&lt;/a&gt;    (TO-92 40V 600mA) (1.Collector 2.Base 3.Emitter)  &lt;/li&gt;&lt;/ul&gt;</description>
+      <footprints>
+        <fp>*SOT23-3*</fp>
+        <fp>*SOT23-3*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">Q</field>
+        <field name="Value">TRANS_NPN-MMBT2222AL</field>
+        <field name="Footprint">SOT23-3</field>
+        <field name="Field4">TRANS-08049</field>
+      </fields>
+      <pins>
+        <pin num="1" name="B" type="passive"/>
+        <pin num="2" name="E" type="passive"/>
+        <pin num="3" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SparkFun-Electromechanical" part="BUZZER-PTH">
+      <description>Buzzer Small round buzzers that operate around the audible 2kHz range. You can use these as speakers to create simple music or user interfaces. Variant Overview:&lt;ul&gt;&lt;li&gt;&lt;b&gt;PTH - &lt;/b&gt; &lt;a href="https://www.sparkfun.com/products/7950"&gt;Mini Speaker - PC Mount 12mm 2.048kHz&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;b&gt;PTH_KIT - &lt;/b&gt; &lt;a href="https://www.sparkfun.com/products/7950"&gt;Mini Speaker - PC Mount 12mm 2.048kHz&lt;/a&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt; KIT simplifies soldering by adding stop mask to one side of the pads.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;PTH_NO_SILK - &lt;/b&gt; &lt;a href="https://www.sparkfun.com/products/7950"&gt;Mini Speaker - PC Mount 12mm 2.048kHz&lt;/a&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt; No silkscreen indicator of buzzer outline.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;PTH_KIT_NO_SILK - &lt;/b&gt; &lt;a href="https://www.sparkfun.com/products/7950"&gt;Mini Speaker - PC Mount 12mm 2.048kHz&lt;/a&gt;&lt;/li&gt;&lt;ul&gt;&lt;li&gt; KIT package w/o silkscreen&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;SMD - &lt;/b&gt; Buzzer Audio Magnetic (CCV-084B16)&lt;/li&gt; &lt;ul&gt;&lt;li&gt;SMD buzzer used on, e.g. the &lt;a href="https://www.sparkfun.com/products/8463"&gt;LilyPad Buzzer&lt;/a&gt; and &lt;a href="https://www.sparkfun.com/products/9963"&gt;RFID USB Reader&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;li&gt;&lt;b&gt;SMD_KIT - &lt;/b&gt; Buzzer Audio Magnetic (CCV-084B16)&lt;/li&gt;&lt;ul&gt;&lt;li&gt;SMD Buzzer with elongated pins to make soldering easier. Used on the &lt;a href="https://www.sparkfun.com/products/10935"&gt;SparkFun Simon Says - Surface Mount Soldering Kit&lt;/a&gt;.&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;</description>
+      <footprints>
+        <fp>*BUZZER-12MM*</fp>
+        <fp>*BUZZER-12MM-KIT*</fp>
+        <fp>*BUZZER-12MM-NS-KIT*</fp>
+        <fp>*BUZZER-12MM-NS*</fp>
+        <fp>*BUZZER-CCV*</fp>
+        <fp>*BUZZER-CCV-KIT*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">LS</field>
+        <field name="Value">BUZZER-PTH</field>
+        <field name="Footprint">BUZZER-12MM</field>
+        <field name="Field4">COMP-08253</field>
+      </fields>
+      <pins>
+        <pin num="+" name="1" type="passive"/>
+        <pin num="-" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SparkFun-LED" part="LED-BLUE1206">
+      <description>Blue SMD LED Used in manufacturing of various products at SparkFun &lt;b&gt;Packages:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;b&gt;0603&lt;/b&gt; - SMD 0603 package &lt;a href="http://www.digikey.com/product-detail/en/SMLE12BC7TT86/511-1589-2-ND/1641808"&gt;[Product Link]&lt;/li&gt;&lt;li&gt;&lt;b&gt;1206&lt;/b&gt; - SMD1206  package &lt;a href="http://www.digikey.com/product-detail/en/lite-on-inc/LTST-C150TBKT/160-1643-1-ND/573584"&gt;[Product Link]&lt;/li&gt;&lt;ul&gt; &lt;b&gt;SparkFun Products:&lt;/b&gt;&lt;ul&gt;&lt;li&gt;&lt;a href= https://www.sparkfun.com/products/13711 &gt;ESP8266 Thing-Dev Board&lt;/a&gt;&lt;/li&gt;&lt;li&gt;&lt;a href= https://www.sparkfun.com/products/12757 &gt;RedBoard&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <footprints>
+        <fp>*LED-1206*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED-BLUE1206</field>
+        <field name="Footprint">LED-1206</field>
+        <field name="Field4">DIO-09911</field>
+      </fields>
+      <pins>
+        <pin num="A" name="A" type="passive"/>
+        <pin num="C" name="C" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SparkFun-Resistors" part="RESISTOR0805">
+      <description>Generic Resistor Package</description>
+      <footprints>
+        <fp>*0805*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">RESISTOR0805</field>
+        <field name="Footprint">0805</field>
+        <field name="Field4"> </field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SparkFun-Switches" part="MOMENTARY-SWITCH-SPST-SMD-4.5MM">
+      <description>Momentary Switch (Pushbutton) - SPST Normally-open (NO) SPST momentary switches (buttons, pushbuttons). &lt;h4&gt;Variants&lt;/h4&gt;&lt;h5&gt;PTH-12MM - 12mm square, through-hole&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/9190"&gt;Momentary Pushbutton Switch - 12mm Square&lt;/a&gt; (COM-09190)&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;PTH-6.0MM, PTH-6.0MM-KIT - 6.0mm square, through-hole&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/97"&gt;Mini Pushbutton Switch&lt;/a&gt; (COM-00097)&lt;/li&gt;&lt;li&gt;KIT package intended for soldering kit's - only one side of pads' copper is exposed.&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;PTH-RIGHT-ANGLE-KIT - Right-angle, through-hole&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10791"&gt;Right Angle Tactile Button&lt;/a&gt; - Used on &lt;a href="https://www.sparkfun.com/products/11734"&gt;SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-12MM - 12mm square, surface-mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12993"&gt;Tactile Button - SMD (12mm)&lt;/a&gt; (COM-12993)&lt;/li&gt;&lt;li&gt;Used on &lt;a href="https://www.sparkfun.com/products/11888"&gt;SparkFun PicoBoard&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-4.5MM - 4.5mm Square Trackball Switch&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;Used on &lt;a href="https://www.sparkfun.com/products/13169"&gt;SparkFun Blackberry Trackballer Breakout&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-4.6MMX2.8MM -  4.60mm x 2.80mm, surface mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;Used on &lt;a href="https://www.sparkfun.com/products/13664"&gt;SparkFun SAMD21 Mini Breakout&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-5.2MM, SMD-5.2-REDUNDANT - 5.2mm square, surface-mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8720"&gt;Mini Pushbutton Switch - SMD&lt;/a&gt; (COM-08720)&lt;/li&gt;&lt;li&gt;Used on &lt;a href="https://www.sparkfun.com/products/11114"&gt;Arduino Pro Mini&lt;/a&gt;&lt;/li&gt;&lt;li&gt;REDUNDANT package connects both switch circuits together&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-6.0X3.5MM - 6.0 x 3.5mm, surface mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/8229"&gt;Momentary Reset Switch SMD&lt;/a&gt; (COM-08229)&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-6.2MM-TALL - 6.2mm square, surface mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12992"&gt;Tactile Button - SMD (6mm)&lt;/a&gt;&lt;/li&gt;&lt;li&gt;Used on &lt;a href="https://www.sparkfun.com/products/12651"&gt;SparkFun Digital Sandbox&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-RIGHT-ANGLE - Right-angle, surface mount&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;Used on &lt;a href="https://www.sparkfun.com/products/13036"&gt;SparkFun Block for Intel  Edison - Arduino&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <footprints>
+        <fp>*TACTILE_SWITCH_SMD_4.5MM*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">MOMENTARY-SWITCH-SPST-SMD-4.5MM</field>
+        <field name="Footprint">TACTILE_SWITCH_SMD_4.5MM</field>
+        <field name="Field4">SWCH-09213</field>
+      </fields>
+      <pins>
+        <pin num="1" name="2" type="passive"/>
+        <pin num="2" name="1" type="passive"/>
+        <pin num="3" name="1" type="passive"/>
+        <pin num="4" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="SparkFun-Switches" part="SWITCH-SPDT-PTH-11.6X4.0MM">
+      <description>Single Pole, Double Throw (SPDT) Switch Single-pole, double-throw (SPDT) switch. &lt;h4&gt;Variant Overview&lt;/h4&gt;&lt;h5&gt;SMD-AYZ0202&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/597"&gt;Surface Mount DPDT Switch&lt;/a&gt; (COM-00597)&lt;/li&gt;&lt;li&gt;Used on e.g. &lt;a href="https://www.sparkfun.com/products/12049"&gt;LilyPad Arduino USB - ATmega32U4 Board&lt;/a&gt;&lt;/ul&gt;&lt;h5&gt;PTH-11.6X4.0MM&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/102"&gt;SPDT Mini Power Switch&lt;/a&gt; (COM-00102)&lt;/li&gt;&lt;li&gt;Used on e.g. &lt;a href="https://www.sparkfun.com/products/10547"&gt;SparkFun Simon Says - Through-Hole Soldering Kit&lt;/a&gt; (KIT-10547)&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;PTH-11.6X4.0MM-KIT&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;KIT version of SPDT Mini Power Switch - Simplifies soldering by removing tStop of switch pins - only one side can be soldered.&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;PTH-11.6X4.0MM-LOCK&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;LOCK version of SPDT Mini Power Switch - Offset pins hold switch in place for easier soldering.&lt;/li&gt;&lt;/ul&gt;&lt;h5&gt;SMD-RIGHT-ANGLE&lt;/h5&gt;&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/10860"&gt;Surface Mount Right Angle Switch&lt;/a&gt; (COM-10860)&lt;/li&gt;&lt;li&gt;Used on e.g. &lt;a href="https://www.sparkfun.com/products/13231"&gt;SparkFun ESP8266 Thing&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;</description>
+      <footprints>
+        <fp>*SWITCH_SPDT_PTH_11.6X4.0MM*</fp>
+        <fp>*SWITCH_SPDT_PTH_11.6X4.0MM_KIT*</fp>
+        <fp>*SWITCH_SPDT_PTH_11.6X4.0MM_LOCK*</fp>
+        <fp>*SWITCH_DPDT_SMD_AYZ0202*</fp>
+        <fp>*SWITCH_SPST_SMD_A*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">S</field>
+        <field name="Value">SWITCH-SPDT-PTH-11.6X4.0MM</field>
+        <field name="Footprint">SWITCH_SPDT_PTH_11.6X4.0MM</field>
+        <field name="Field4">SWCH-08261</field>
+      </fields>
+      <pins>
+        <pin num="1" name="O" type="passive"/>
+        <pin num="2" name="P" type="passive"/>
+        <pin num="3" name="S" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="Timer_RTC" part="DS3231M">
+      <description>Extremely Accurate I2C-Integrated RTC/TCXO/Crystal SOIC-16</description>
+      <docs>http://datasheets.maximintegrated.com/en/ds/DS3231.pdf</docs>
+      <footprints>
+        <fp>SOIC*7.5x10.3mm*P1.27mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DS3231M</field>
+        <field name="Footprint">Package_SO:SOIC-16W_7.5x10.3mm_P1.27mm</field>
+      </fields>
+      <pins>
+        <pin num="1" name="32KHZ" type="openCol"/>
+        <pin num="2" name="VCC" type="power_in"/>
+        <pin num="3" name="~INT~/SQW" type="openCol"/>
+        <pin num="4" name="~RST" type="BiDi"/>
+        <pin num="5" name="GND" type="passive"/>
+        <pin num="6" name="GND" type="passive"/>
+        <pin num="7" name="GND" type="passive"/>
+        <pin num="8" name="GND" type="passive"/>
+        <pin num="9" name="GND" type="passive"/>
+        <pin num="10" name="GND" type="passive"/>
+        <pin num="11" name="GND" type="passive"/>
+        <pin num="12" name="GND" type="passive"/>
+        <pin num="13" name="GND" type="power_in"/>
+        <pin num="14" name="VBAT" type="power_in"/>
+        <pin num="15" name="SDA" type="BiDi"/>
+        <pin num="16" name="SCL" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_PMIC-Voltage-Regulators-Linear" part="MIC5219-3_3YM5-TR">
+      <description>IC REG LINEAR 3.3V 500MA SOT23-5</description>
+      <docs>http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579712</docs>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MIC5219-3_3YM5-TR</field>
+        <field name="Footprint">digikey-footprints:SOT-753</field>
+        <field name="Datasheet">http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579712</field>
+        <field name="Digi-Key_PN">576-1281-1-ND</field>
+        <field name="MPN">MIC5219-3.3YM5-TR</field>
+        <field name="Category">Integrated Circuits (ICs)</field>
+        <field name="Family">PMIC - Voltage Regulators - Linear</field>
+        <field name="DK_Datasheet_Link">http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en579712</field>
+        <field name="DK_Detail_Page">/product-detail/en/microchip-technology/MIC5219-3.3YM5-TR/576-1281-1-ND/771902</field>
+        <field name="Description">IC REG LINEAR 3.3V 500MA SOT23-5</field>
+        <field name="Manufacturer">Microchip Technology</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="IN" type="power_in"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="BYP" type="passive"/>
+        <pin num="5" name="OUT" type="power_out"/>
+      </pins>
+    </libpart>
+    <libpart lib="dk_RF-Transceiver-Modules" part="ESP32-WROOM-32">
+      <description>SMD MODULE, ESP32-D0WDQ6, 32MBIT</description>
+      <docs>https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf</docs>
+      <fields>
+        <field name="Reference">MOD</field>
+        <field name="Value">ESP32-WROOM-32</field>
+        <field name="Footprint">digikey-footprints:ESP32-WROOM-32D</field>
+        <field name="Datasheet">https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf</field>
+        <field name="Digi-Key_PN">1904-1010-1-ND</field>
+        <field name="MPN">ESP32-WROOM-32</field>
+        <field name="Category">RF/IF and RFID</field>
+        <field name="Family">RF Transceiver Modules</field>
+        <field name="DK_Datasheet_Link">https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf</field>
+        <field name="DK_Detail_Page">/product-detail/en/espressif-systems/ESP32-WROOM-32/1904-1010-1-ND/8544305</field>
+        <field name="Description">SMD MODULE, ESP32-D0WDQ6, 32MBIT</field>
+        <field name="Manufacturer">Espressif Systems</field>
+        <field name="Status">Active</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="3V3" type="power_in"/>
+        <pin num="3" name="EN" type="input"/>
+        <pin num="4" name="SENSOR_VP" type="input"/>
+        <pin num="5" name="SENSOR_VN" type="input"/>
+        <pin num="6" name="IO34" type="BiDi"/>
+        <pin num="7" name="IO35" type="BiDi"/>
+        <pin num="8" name="IO32" type="BiDi"/>
+        <pin num="9" name="IO33" type="BiDi"/>
+        <pin num="10" name="IO25" type="BiDi"/>
+        <pin num="11" name="IO26" type="BiDi"/>
+        <pin num="12" name="IO27" type="BiDi"/>
+        <pin num="13" name="IO14" type="BiDi"/>
+        <pin num="14" name="IO12" type="BiDi"/>
+        <pin num="15" name="GND" type="power_in"/>
+        <pin num="16" name="IO13" type="BiDi"/>
+        <pin num="17" name="SHD/SD2" type="BiDi"/>
+        <pin num="18" name="SWP/SD3" type="BiDi"/>
+        <pin num="19" name="SCS/CMD" type="BiDi"/>
+        <pin num="20" name="SCK/CLK" type="BiDi"/>
+        <pin num="21" name="SDO/SD0" type="BiDi"/>
+        <pin num="22" name="SDI/SD1" type="BiDi"/>
+        <pin num="23" name="IO15" type="BiDi"/>
+        <pin num="24" name="IO2" type="BiDi"/>
+        <pin num="25" name="IO0" type="BiDi"/>
+        <pin num="26" name="IO4" type="BiDi"/>
+        <pin num="27" name="IO16" type="BiDi"/>
+        <pin num="28" name="IO17" type="BiDi"/>
+        <pin num="29" name="IO5" type="BiDi"/>
+        <pin num="30" name="IO18" type="BiDi"/>
+        <pin num="31" name="IO19" type="BiDi"/>
+        <pin num="32" name="NC" type="NotConnected"/>
+        <pin num="33" name="IO21" type="BiDi"/>
+        <pin num="34" name="RXD0" type="BiDi"/>
+        <pin num="35" name="TXD0" type="BiDi"/>
+        <pin num="36" name="IO22" type="BiDi"/>
+        <pin num="37" name="IO23" type="BiDi"/>
+        <pin num="38" name="GND" type="power_in"/>
+        <pin num="39" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="Connector_Generic">
+      <uri>/usr/share/kicad/library/Connector_Generic.lib</uri>
+    </library>
+    <library logical="Diode">
+      <uri>/usr/share/kicad/library/Diode.lib</uri>
+    </library>
+    <library logical="Regulator_Linear">
+      <uri>/usr/share/kicad/library/Regulator_Linear.lib</uri>
+    </library>
+    <library logical="SSD1306-128x64_OLED">
+      <uri>/home/ashish/Documents/ASHISH_Workdata_during lockdown/Ashish_Pardeshi/Software/KiCAD_Lib/KiCad-SSD1306-128x64-master/KiCad-SSD1306-128x64-master/library/SSD1306-128x64_OLED.lib</uri>
+    </library>
+    <library logical="SparkFun-Batteries">
+      <uri>/home/ashish/Documents/ASHISH_Workdata_during lockdown/Ashish_Pardeshi/Software/KiCAD_Lib/SparkFun-KiCad-Libraries-master/SparkFun-KiCad-Libraries-master/Libraries/SparkFun-Batteries.lib</uri>
+    </library>
+    <library logical="SparkFun-Capacitors">
+      <uri>/home/ashish/Documents/ASHISH_Workdata_during lockdown/Ashish_Pardeshi/Software/KiCAD_Lib/SparkFun-KiCad-Libraries-master/SparkFun-KiCad-Libraries-master/Libraries/SparkFun-Capacitors.lib</uri>
+    </library>
+    <library logical="SparkFun-Connectors">
+      <uri>/home/ashish/Documents/ASHISH_Workdata_during lockdown/Ashish_Pardeshi/Software/KiCAD_Lib/SparkFun-KiCad-Libraries-master/SparkFun-KiCad-Libraries-master/Libraries/SparkFun-Connectors.lib</uri>
+    </library>
+    <library logical="SparkFun-DiscreteSemi">
+      <uri>/home/ashish/Documents/ASHISH_Workdata_during lockdown/Ashish_Pardeshi/Software/KiCAD_Lib/SparkFun-KiCad-Libraries-master/SparkFun-KiCad-Libraries-master/Libraries/SparkFun-DiscreteSemi.lib</uri>
+    </library>
+    <library logical="SparkFun-Electromechanical">
+      <uri>/home/ashish/Documents/ASHISH_Workdata_during lockdown/Ashish_Pardeshi/Software/KiCAD_Lib/SparkFun-KiCad-Libraries-master/SparkFun-KiCad-Libraries-master/Libraries/SparkFun-Electromechanical.lib</uri>
+    </library>
+    <library logical="SparkFun-LED">
+      <uri>/home/ashish/Documents/ASHISH_Workdata_during lockdown/Ashish_Pardeshi/Software/KiCAD_Lib/SparkFun-KiCad-Libraries-master/SparkFun-KiCad-Libraries-master/Libraries/SparkFun-LED.lib</uri>
+    </library>
+    <library logical="SparkFun-Resistors">
+      <uri>/home/ashish/Documents/ASHISH_Workdata_during lockdown/Ashish_Pardeshi/Software/KiCAD_Lib/SparkFun-KiCad-Libraries-master/SparkFun-KiCad-Libraries-master/Libraries/SparkFun-Resistors.lib</uri>
+    </library>
+    <library logical="SparkFun-Switches">
+      <uri>/home/ashish/Documents/ASHISH_Workdata_during lockdown/Ashish_Pardeshi/Software/KiCAD_Lib/SparkFun-KiCad-Libraries-master/SparkFun-KiCad-Libraries-master/Libraries/SparkFun-Switches.lib</uri>
+    </library>
+    <library logical="Timer_RTC">
+      <uri>/usr/share/kicad/library/Timer_RTC.lib</uri>
+    </library>
+    <library logical="dk_PMIC-Voltage-Regulators-Linear">
+      <uri>/home/ashish/Documents/ASHISH_Workdata_during lockdown/Ashish_Pardeshi/Software/KiCAD_Lib/digikey-kicad-library-master/digikey-kicad-library-master/digikey-symbols/dk_PMIC-Voltage-Regulators-Linear.lib</uri>
+    </library>
+    <library logical="dk_RF-Transceiver-Modules">
+      <uri>/home/ashish/Documents/ASHISH_Workdata_during lockdown/Ashish_Pardeshi/Software/KiCAD_Lib/digikey-kicad-library-master/digikey-kicad-library-master/digikey-symbols/dk_RF-Transceiver-Modules.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="DS182B0">
+      <node ref="R18" pin="1"/>
+      <node ref="MOD1" pin="31"/>
+      <node ref="J11" pin="2"/>
+    </net>
+    <net code="2" name="Net-(R19-Pad1)">
+      <node ref="R20" pin="2"/>
+      <node ref="R19" pin="1"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="3" name="Battery_Voltage">
+      <node ref="R16" pin="1"/>
+      <node ref="R17" pin="2"/>
+      <node ref="MOD1" pin="9"/>
+    </net>
+    <net code="4" name="LED_2">
+      <node ref="R6" pin="1"/>
+      <node ref="MOD1" pin="28"/>
+    </net>
+    <net code="5" name="Net-(C6-Pad1)">
+      <node ref="C6" pin="1"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="6" name="GND">
+      <node ref="R17" pin="1"/>
+      <node ref="U2" pin="5"/>
+      <node ref="J8" pin="6"/>
+      <node ref="U2" pin="13"/>
+      <node ref="U2" pin="12"/>
+      <node ref="U2" pin="11"/>
+      <node ref="U2" pin="10"/>
+      <node ref="J1" pin="1"/>
+      <node ref="MOD1" pin="39"/>
+      <node ref="MOD1" pin="38"/>
+      <node ref="J9" pin="1"/>
+      <node ref="BT1" pin="2"/>
+      <node ref="J2" pin="1"/>
+      <node ref="J10" pin="3"/>
+      <node ref="J3" pin="1"/>
+      <node ref="J11" pin="3"/>
+      <node ref="J7" pin="3"/>
+      <node ref="J4" pin="3"/>
+      <node ref="D4" pin="C"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C2" pin="-"/>
+      <node ref="D2" pin="C"/>
+      <node ref="C1" pin="2"/>
+      <node ref="R20" pin="1"/>
+      <node ref="C5" pin="2"/>
+      <node ref="S3" pin="3"/>
+      <node ref="S4" pin="3"/>
+      <node ref="S3" pin="2"/>
+      <node ref="S4" pin="2"/>
+      <node ref="Q2" pin="2"/>
+      <node ref="J6" pin="3"/>
+      <node ref="U2" pin="9"/>
+      <node ref="U1" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="Q1" pin="2"/>
+      <node ref="Brd1" pin="1"/>
+      <node ref="U2" pin="8"/>
+      <node ref="U2" pin="7"/>
+      <node ref="U2" pin="6"/>
+      <node ref="MOD1" pin="1"/>
+      <node ref="MOD1" pin="15"/>
+      <node ref="R11" pin="2"/>
+      <node ref="R13" pin="2"/>
+      <node ref="C7" pin="2"/>
+    </net>
+    <net code="7" name="3.3V">
+      <node ref="D1" pin="1"/>
+      <node ref="R21" pin="2"/>
+      <node ref="J7" pin="4"/>
+      <node ref="R8" pin="2"/>
+      <node ref="J3" pin="2"/>
+      <node ref="C10" pin="+"/>
+      <node ref="C11" pin="1"/>
+      <node ref="R22" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="R4" pin="1"/>
+      <node ref="J6" pin="4"/>
+      <node ref="R2" pin="1"/>
+      <node ref="Brd1" pin="2"/>
+      <node ref="MOD1" pin="2"/>
+      <node ref="LS1" pin="-"/>
+      <node ref="C2" pin="+"/>
+      <node ref="C3" pin="1"/>
+      <node ref="R3" pin="1"/>
+      <node ref="R12" pin="2"/>
+      <node ref="R18" pin="2"/>
+      <node ref="R15" pin="2"/>
+      <node ref="R24" pin="2"/>
+      <node ref="J11" pin="1"/>
+      <node ref="J8" pin="4"/>
+      <node ref="J10" pin="1"/>
+      <node ref="U1" pin="5"/>
+      <node ref="C7" pin="1"/>
+    </net>
+    <net code="8" name="DHT22">
+      <node ref="MOD1" pin="30"/>
+      <node ref="R15" pin="1"/>
+      <node ref="J10" pin="2"/>
+    </net>
+    <net code="9" name="+4V">
+      <node ref="C4" pin="1"/>
+      <node ref="J5" pin="1"/>
+      <node ref="D3" pin="1"/>
+      <node ref="U1" pin="1"/>
+      <node ref="R16" pin="2"/>
+      <node ref="S1" pin="3"/>
+      <node ref="U3" pin="3"/>
+      <node ref="C9" pin="1"/>
+      <node ref="R19" pin="2"/>
+      <node ref="C8" pin="+"/>
+    </net>
+    <net code="10" name="Net-(J1-Pad2)">
+      <node ref="S1" pin="2"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="11" name="Net-(C4-Pad2)">
+      <node ref="D3" pin="2"/>
+      <node ref="J5" pin="2"/>
+      <node ref="Q2" pin="3"/>
+      <node ref="C4" pin="2"/>
+    </net>
+    <net code="12" name="Net-(S1-Pad1)">
+      <node ref="S1" pin="1"/>
+    </net>
+    <net code="13" name="Net-(MOD1-Pad34)">
+      <node ref="R14" pin="2"/>
+      <node ref="MOD1" pin="34"/>
+    </net>
+    <net code="14" name="DTR">
+      <node ref="J8" pin="1"/>
+      <node ref="Q4" pin="2"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="15" name="TXD">
+      <node ref="MOD1" pin="35"/>
+      <node ref="J8" pin="2"/>
+    </net>
+    <net code="16" name="RXD">
+      <node ref="J8" pin="3"/>
+      <node ref="R14" pin="1"/>
+    </net>
+    <net code="17" name="RTS">
+      <node ref="J8" pin="5"/>
+      <node ref="R10" pin="1"/>
+      <node ref="Q3" pin="2"/>
+    </net>
+    <net code="18" name="Buzz_IO">
+      <node ref="R1" pin="1"/>
+      <node ref="MOD1" pin="10"/>
+    </net>
+    <net code="19" name="SDA">
+      <node ref="U2" pin="15"/>
+      <node ref="J7" pin="1"/>
+      <node ref="Brd1" pin="4"/>
+      <node ref="R2" pin="2"/>
+      <node ref="J6" pin="1"/>
+      <node ref="MOD1" pin="33"/>
+    </net>
+    <net code="20" name="SCL">
+      <node ref="MOD1" pin="36"/>
+      <node ref="J7" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="J6" pin="2"/>
+      <node ref="Brd1" pin="3"/>
+      <node ref="U2" pin="16"/>
+    </net>
+    <net code="21" name="Net-(MOD1-Pad29)">
+      <node ref="MOD1" pin="29"/>
+      <node ref="R11" pin="1"/>
+    </net>
+    <net code="22" name="S_Moist_Sensor">
+      <node ref="MOD1" pin="8"/>
+      <node ref="J3" pin="3"/>
+    </net>
+    <net code="23" name="Pump_IO">
+      <node ref="R7" pin="1"/>
+      <node ref="MOD1" pin="11"/>
+    </net>
+    <net code="24" name="Sw_1">
+      <node ref="J2" pin="3"/>
+      <node ref="R21" pin="1"/>
+      <node ref="MOD1" pin="7"/>
+    </net>
+    <net code="25" name="LED_1">
+      <node ref="MOD1" pin="12"/>
+      <node ref="R5" pin="1"/>
+    </net>
+    <net code="26" name="Board_LED">
+      <node ref="MOD1" pin="13"/>
+      <node ref="R23" pin="2"/>
+    </net>
+    <net code="27" name="Net-(D4-PadA)">
+      <node ref="D4" pin="A"/>
+      <node ref="R24" pin="1"/>
+    </net>
+    <net code="28" name="Net-(J9-Pad8)">
+      <node ref="J9" pin="8"/>
+      <node ref="MOD1" pin="22"/>
+    </net>
+    <net code="29" name="Net-(J9-Pad7)">
+      <node ref="J9" pin="7"/>
+      <node ref="MOD1" pin="21"/>
+    </net>
+    <net code="30" name="Net-(D2-PadA)">
+      <node ref="R23" pin="1"/>
+      <node ref="D2" pin="A"/>
+    </net>
+    <net code="31" name="Pin_24">
+      <node ref="J9" pin="10"/>
+      <node ref="MOD1" pin="24"/>
+    </net>
+    <net code="32" name="Pin_23">
+      <node ref="R12" pin="1"/>
+      <node ref="J9" pin="9"/>
+      <node ref="MOD1" pin="23"/>
+    </net>
+    <net code="33" name="Net-(J9-Pad6)">
+      <node ref="MOD1" pin="20"/>
+      <node ref="J9" pin="6"/>
+    </net>
+    <net code="34" name="Net-(J9-Pad3)">
+      <node ref="J9" pin="3"/>
+      <node ref="MOD1" pin="17"/>
+    </net>
+    <net code="35" name="Net-(J9-Pad5)">
+      <node ref="MOD1" pin="19"/>
+      <node ref="J9" pin="5"/>
+    </net>
+    <net code="36" name="Net-(J9-Pad4)">
+      <node ref="MOD1" pin="18"/>
+      <node ref="J9" pin="4"/>
+    </net>
+    <net code="37" name="Pin_16">
+      <node ref="MOD1" pin="16"/>
+      <node ref="J9" pin="2"/>
+    </net>
+    <net code="38" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="Q1" pin="3"/>
+      <node ref="LS1" pin="+"/>
+    </net>
+    <net code="39" name="Sw_2">
+      <node ref="MOD1" pin="6"/>
+      <node ref="R22" pin="1"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="40" name="Net-(C10-Pad-)">
+      <node ref="C11" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="U3" pin="1"/>
+      <node ref="C8" pin="-"/>
+      <node ref="C10" pin="-"/>
+    </net>
+    <net code="41" name="Net-(Q1-Pad1)">
+      <node ref="Q1" pin="1"/>
+      <node ref="R1" pin="2"/>
+    </net>
+    <net code="42" name="Net-(MOD1-Pad37)">
+      <node ref="MOD1" pin="37"/>
+    </net>
+    <net code="43" name="Net-(BT1-Pad1)">
+      <node ref="U2" pin="14"/>
+      <node ref="BT1" pin="1"/>
+    </net>
+    <net code="44" name="Net-(MOD1-Pad27)">
+      <node ref="MOD1" pin="27"/>
+    </net>
+    <net code="45" name="Net-(U2-Pad1)">
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="46" name="Net-(U2-Pad3)">
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="47" name="Net-(U2-Pad4)">
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="48" name="Net-(MOD1-Pad32)">
+      <node ref="MOD1" pin="32"/>
+    </net>
+    <net code="49" name="Net-(MOD1-Pad26)">
+      <node ref="MOD1" pin="26"/>
+    </net>
+    <net code="50" name="Net-(MOD1-Pad4)">
+      <node ref="MOD1" pin="4"/>
+    </net>
+    <net code="51" name="Net-(MOD1-Pad5)">
+      <node ref="MOD1" pin="5"/>
+    </net>
+    <net code="52" name="Net-(Q3-Pad1)">
+      <node ref="Q3" pin="1"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="53" name="IO0">
+      <node ref="S3" pin="1"/>
+      <node ref="S3" pin="4"/>
+      <node ref="Q4" pin="3"/>
+      <node ref="R8" pin="1"/>
+      <node ref="MOD1" pin="25"/>
+    </net>
+    <net code="54" name="Net-(Q4-Pad1)">
+      <node ref="Q4" pin="1"/>
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="55" name="EN">
+      <node ref="C1" pin="1"/>
+      <node ref="R3" pin="2"/>
+      <node ref="S4" pin="4"/>
+      <node ref="MOD1" pin="3"/>
+      <node ref="S4" pin="1"/>
+      <node ref="Q3" pin="3"/>
+    </net>
+    <net code="56" name="Net-(MOD1-Pad14)">
+      <node ref="MOD1" pin="14"/>
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="57" name="+3V3">
+      <node ref="U2" pin="2"/>
+      <node ref="C5" pin="1"/>
+    </net>
+    <net code="58" name="Net-(Q2-Pad1)">
+      <node ref="Q2" pin="1"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="59" name="Net-(J4-Pad1)">
+      <node ref="R5" pin="2"/>
+      <node ref="J4" pin="1"/>
+    </net>
+    <net code="60" name="Net-(J4-Pad2)">
+      <node ref="J4" pin="2"/>
+      <node ref="R6" pin="2"/>
+    </net>
+  </nets>
+</export>
