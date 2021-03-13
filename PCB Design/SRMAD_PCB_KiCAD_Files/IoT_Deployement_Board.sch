@@ -4,7 +4,7 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "IoT Plant Monitoring and Watering System"
+Title "ESP32_based_IoT_Deployement_Board"
 Date ""
 Rev "v0.1"
 Comp "HBCSE - TIFR"
@@ -1827,8 +1827,8 @@ $Comp
 L SparkFun-Resistors:RESISTOR0805 R23
 U 1 1 5FE059EE
 P 6850 5700
-F 0 "R23" H 6700 5800 45  0000 C CNN
-F 1 "0805" H 6850 5800 45  0000 C CNN
+F 0 "R23" H 6850 5800 45  0000 C CNN
+F 1 "470e" H 6850 5600 45  0000 C CNN
 F 2 "0805" H 6850 5850 20  0001 C CNN
 F 3 "" H 6850 5700 60  0001 C CNN
 F 4 " " H 6850 5821 60  0000 C CNN "Field4"
