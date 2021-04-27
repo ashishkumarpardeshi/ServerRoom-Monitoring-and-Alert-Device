@@ -5,5 +5,9 @@
 </p>
 
 <p align="center">
-  <img width="355" height="42" src="Enclosure_Design/Enclosure_V1_3D_Images/Enc_3D_1.png">
+  <img src="Enclosure_Design/Enclosure_V1_3D_Images/Enc_3D_3.png">
+</p>
+
+<p align="center">
+  <img width="600" height="420" src="Project_Images/1613978299561.jpg">
 </p>
